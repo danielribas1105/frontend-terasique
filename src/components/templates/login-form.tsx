@@ -27,16 +27,16 @@ export function LoginForm() {
             <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2 mb-4">
                <LabelInputContainer>
                   <Label htmlFor="firstname">Nome</Label>
-                  <Input id="firstname" placeholder="Tyler" type="text" />
+                  <Input id="firstname" placeholder="Nome" type="text" />
                </LabelInputContainer>
                <LabelInputContainer>
                   <Label htmlFor="lastname">Sobrenome</Label>
-                  <Input id="lastname" placeholder="Durden" type="text" />
+                  <Input id="lastname" placeholder="Sobrenome" type="text" />
                </LabelInputContainer>
             </div>
             <LabelInputContainer className="mb-4">
                <Label htmlFor="email">E-mail</Label>
-               <Input id="email" placeholder="projectmayhem@fc.com" type="email" />
+               <Input id="email" placeholder="seuemail@provedor.com" type="email" />
             </LabelInputContainer>
             <LabelInputContainer className="mb-4">
                <Label htmlFor="password">Senha</Label>
@@ -52,7 +52,7 @@ export function LoginForm() {
             </LabelInputContainer>
 
             <button
-               className="bg-gradient-to-br relative group/btn from-black dark:from-zinc-900 dark:to-zinc-900 to-neutral-600 block dark:bg-zinc-800 w-full text-white rounded-md h-10 font-medium shadow-[0px_1px_0px_0px_#ffffff40_inset,0px_-1px_0px_0px_#ffffff40_inset] dark:shadow-[0px_1px_0px_0px_var(--zinc-800)_inset,0px_-1px_0px_0px_var(--zinc-800)_inset]"
+               className="bg-gradient-to-br relative group/btn from-logo-blue dark:from-zinc-900 dark:to-zinc-900 to-blue-400 block dark:bg-zinc-800 w-full text-white rounded-md h-10 font-medium shadow-[0px_1px_0px_0px_#ffffff40_inset,0px_-1px_0px_0px_#ffffff40_inset] dark:shadow-[0px_1px_0px_0px_var(--zinc-800)_inset,0px_-1px_0px_0px_var(--zinc-800)_inset]"
                type="submit"
             >
                Entrar &rarr;
