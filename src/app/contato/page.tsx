@@ -1,9 +1,9 @@
 import Container from "@/components/layout/container"
 
-export default function Profissionais() {
+export default function Contato() {
    return (
       <Container className="my-4">
-         <div>PROFISSIONAIS</div>
+         <div>CONTATO</div>
       </Container>
    )
 }

@@ -1,5 +1,21 @@
 import type { Metadata } from "next"
+import { ThemeProvider } from "next-themes";
+import { Roboto, Concert_One } from "next/font/google"
 import "./globals.css"
+import Footer from "@/components/templates/footer";
+import Header from "@/components/templates/header";
+
+const roboto = Roboto({
+   variable: '--font-roboto',
+   subsets: ['latin'],
+   weight: ['400', '500', '700']
+})
+
+const concert = Concert_One({
+   variable: '--font-concert',
+   subsets: ['latin'],
+   weight: ['400']
+})
 
 export const metadata: Metadata = {
    title: "Terasique",
@@ -12,9 +28,18 @@ export default function RootLayout({
    children: React.ReactNode;
 }>) {
    return (
-      <html lang="pt-BR">
-         <body>
-            {children}
+      <html lang="pt-br">
+         <body className={`${roboto.variable} ${concert.variable}`}>
+            <ThemeProvider
+               attribute="class"
+               defaultTheme="light"
+               enableSystem
+               disableTransitionOnChange
+            >
+               <Header />
+               {children}
+               <Footer />
+            </ThemeProvider>
          </body>
       </html>
    );

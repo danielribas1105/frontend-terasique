@@ -1,5 +1,9 @@
+import Container from "@/components/layout/container";
+
 export default function SobreNos() {
    return (
-      <div>SOBRE NÓS</div>
+      <Container className="my-4">
+         <div>SOBRE NÓS</div>
+      </Container>
    )
 }
