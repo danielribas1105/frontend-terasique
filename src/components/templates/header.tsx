@@ -14,7 +14,6 @@ import {
    IconPuzzle
 } from "@tabler/icons-react"
 import Link from "next/link"
-import { useTheme } from "next-themes"
 import { ModeToggle } from "@/components/ui/mode-toggle"
 import Container from "../layout/container"
 import NavMenu from "@/components/templates/nav"
