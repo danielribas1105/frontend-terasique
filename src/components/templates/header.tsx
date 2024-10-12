@@ -31,14 +31,12 @@ export default function Header() {
 
    return (
       <header className="z-10">
-         <Container className="flex justify-between items-center gap-20 py-4">
-            <Link href={"/"}>
-               <Image
-                  src={theme === 'dark' ? logoHeaderDark : logoHeaderLight}
-                  width={250}
-                  height={80}
-                  alt="Logo DRCode - Developer"
-               />
+         <Container className="flex justify-center items-center gap-20 py-2 md:py-4">
+            <Link href={"/"} className="md:hidden">
+            <div className="flex flex-col items-start md:items-start md:gap-3 md:pt-5">
+                  <p className="text-logo-green font-title text-3xl md:text-5xl">Bem vindo a Terasique</p>
+                  <p className="text-zinc-600 text-xl md:text-3xl">Anamnese Individual</p>
+               </div>
             </Link>
             <div className="flex gap-3 md:gap-5">
                <NavMenu className={'hidden md:flex md:tracking-wider'}>

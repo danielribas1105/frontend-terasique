@@ -14,6 +14,9 @@ const config: Config = {
             'logo-yellow': '#FFDE56',
             'logo-blue': '#4F71FC',
             'logo-red': '#FE3032',
+            'logo-background': '#ffdca6',
+            'logo-green': '#819065',
+            'logo-dark-green': '#253c2a',
             background: 'hsl(var(--background))',
             foreground: 'hsl(var(--foreground))',
             card: {

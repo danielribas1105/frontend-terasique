@@ -11,7 +11,7 @@ export interface NavItemProps {
 }
 
 export default function NavItem(props: NavItemProps) {
-   const defaultClass = "flex items-center gap-1 text-2xl text-amber-900 hover:text-amber-500 dark:text-amber-700 dark:hover:text-amber-500"
+   const defaultClass = "flex items-center gap-1 text-2xl text-logo-dark-green hover:text-logo-green dark:text-logo-green dark:hover:text-green-700"
    const combinedClasses = twMerge(defaultClass, props.className)
    return (
       <Link href={props.href} className={combinedClasses}>

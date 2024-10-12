@@ -1,18 +1,22 @@
-import { IconCoffee, IconHeart } from "@tabler/icons-react"
+import { IconCode, IconHeart, IconMug } from "@tabler/icons-react"
 import Container from "../layout/container"
 
 export default function Footer() {
    return (
       <footer>
          <Container
-            className="w-full h-12 flex flex-col gap-2 text-logo-gray mt-4">
+            className="w-full h-12 flex flex-col gap-1 justify-start text-zinc-500 mt-5 mb-5">
             <div className="flex gap-2 items-center justify-center md:justify-start">
                <p>Desenvolvido com</p>
                <IconHeart size={20} color="#ff0000"/>
                <p>e</p>
-               <IconCoffee size={20} color="#b5842a"/>
+               <IconMug size={22} color="#b5842a"/>
             </div>
-            <div className="text-center md:text-start">@ 2024 - Todos os direitos reservados - DRCode</div>
+            <div className="flex gap-2 items-center justify-center md:justify-start">
+               <p>@ 2024 - Todos os direitos reservados</p>
+               <IconCode size={22} color="#5e17eb"/>
+               <p>DRCode</p>
+            </div>
          </Container>
       </footer>
    )
