@@ -7,8 +7,8 @@ import logoFull from "@/../public/img/logo/logo-terasique-full.png"
 
 export default function Home() {
    return (
-      <Container className="flex flex-col md:flex-row">
-         <Section className="flex-col gap-3 py-5 md:pr-20 md:tracking-wider">
+      <Container className="flex flex-col md:flex-row py-5">
+         <Section className="flex-col gap-5 md:pr-20 md:tracking-wider">
             <div className="flex flex-col-reverse items-center md:items-start md:flex-row gap-5">
                <Image 
                   src={logoFull} 
@@ -20,11 +20,18 @@ export default function Home() {
                <div className="flex-col items-center md:items-start gap-3 pt-5 md:block hidden">
                   <p className="text-logo-green text-5xl font-title">Bem vindo a Terasique</p>
                   <p className="text-zinc-600 text-3xl">Anamnese Individual</p>
+                  <p className="text-zinc-600 text-2xl text-justify mt-8">
+                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500. Lorem Ipsum has been the industrys standard.
+                  </p>
                </div>
             </div>
-            <span className="flex text-3xl text-logo-gray text-justify mb-10">
+            <span className="flex-col md:flex text-2xl text-logo-gray text-justify mb-10">
+               <p className="text-zinc-600 text-2xl mt-8 md:hidden">
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500. Lorem Ipsum has been the industrys standard.
+               </p>
                <p>
                   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                  It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
                </p>
             </span>
          </Section>

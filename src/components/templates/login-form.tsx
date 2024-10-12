@@ -11,7 +11,7 @@ export function LoginForm() {
    };
    return (
       <div className="max-w-md w-full mx-auto rounded-none md:rounded-2xl p-4 shadow-input bg-white dark:bg-black">
-         <h2 className="font-title text-2xl text-logo-gray dark:text-neutral-200">
+         <h2 className="font-title text-2xl text-logo-dark-green dark:text-green">
             Bem vindo a <strong>Terasique</strong>
          </h2>
          <p className="text-zinc-600 text-sm max-w-sm mt-2 dark:text-neutral-300">
@@ -47,7 +47,7 @@ export function LoginForm() {
             </LabelInputContainer>
 
             <button
-               className="bg-gradient-to-br relative group/btn from-logo-blue dark:from-zinc-900 dark:to-zinc-900 to-blue-400 block dark:bg-zinc-800 w-full text-white rounded-md h-10 font-medium shadow-[0px_1px_0px_0px_#ffffff40_inset,0px_-1px_0px_0px_#ffffff40_inset] dark:shadow-[0px_1px_0px_0px_var(--zinc-800)_inset,0px_-1px_0px_0px_var(--zinc-800)_inset]"
+               className="bg-gradient-to-br relative group/btn from-logo-dark-green dark:from-zinc-900 dark:to-zinc-900 to-logo-green block dark:bg-zinc-800 w-full text-white rounded-md h-10 font-medium shadow-[0px_1px_0px_0px_#ffffff40_inset,0px_-1px_0px_0px_#ffffff40_inset] dark:shadow-[0px_1px_0px_0px_var(--zinc-800)_inset,0px_-1px_0px_0px_var(--zinc-800)_inset]"
                type="submit"
             >
                Entrar &rarr;
