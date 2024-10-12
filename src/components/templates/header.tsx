@@ -13,21 +13,17 @@ import {
    IconBrain,
    IconPuzzle
 } from "@tabler/icons-react"
-import Image from "next/image"
 import Link from "next/link"
 import { useTheme } from "next-themes"
 import { ModeToggle } from "@/components/ui/mode-toggle"
 import Container from "../layout/container"
 import NavMenu from "@/components/templates/nav"
 import NavItem from "@/components/templates/nav-item"
-import logoHeaderDark from "@/../public/img/logo/logo-terasique-dark.png"
-import logoHeaderLight from "@/../public/img/logo/logo-terasique-light.png"
 import { useState } from "react"
 
 export default function Header() {
 
    const [open, setOpen] = useState(false)
-   const { theme } = useTheme()
 
    return (
       <header className="z-10">
