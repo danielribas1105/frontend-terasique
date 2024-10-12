@@ -11,11 +11,12 @@ export default function Footer() {
                <IconHeart size={20} color="#ff0000"/>
                <p>e</p>
                <IconMug size={22} color="#b5842a"/>
-            </div>
-            <div className="flex gap-2 items-center justify-center md:justify-start">
-               <p>@ 2024 - Todos os direitos reservados</p>
+               <p>por</p>
                <IconCode size={22} color="#5e17eb"/>
                <p>DRCode</p>
+            </div>
+            <div className="flex items-center justify-center md:justify-start">
+               <p>@2024 - Todos os direitos reservados</p>
             </div>
          </Container>
       </footer>

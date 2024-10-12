@@ -26,9 +26,9 @@ export default function Header() {
 
    return (
       <header className="z-10">
-         <Container className="flex justify-center items-center gap-20 py-2 md:py-4">
+         <Container className="flex justify-center items-center md:gap-20 gap-2 py-2 md:py-4">
             <Link href={"/"} className="md:hidden">
-            <div className="flex flex-col items-start md:items-start md:gap-3 md:pt-5">
+               <div className="flex flex-col items-start md:items-start md:gap-3 md:pt-5">
                   <p className="text-logo-green font-title text-3xl md:text-5xl">Bem vindo a Terasique</p>
                   <p className="text-zinc-600 text-xl md:text-3xl">Anamnese Individual</p>
                </div>
